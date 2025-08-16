@@ -681,33 +681,41 @@ stroke-linecap: round;
   display: flex;
   align-items: center;     /* Center vertically */
   justify-content: center; /* Center horizontally */
-  background: linear-gradient(135deg, #f0f4f8, #dfe9f3);
-  padding: 0;              /* Remove padding */
-  margin: 0;
+  background: linear-gradient(135deg, #f0f4f8, #dfe9f3); /* Optional background */
+  padding: 20px;
 }
 
 .contact-form form {
   position: relative;
-  width: 100%;             /* Full width */
-  height: 100%;            /* Full height */
+  width: 100%;
+  max-width: 600px;        /* Restrict form width on large screens */
   background: white;
-  padding: 3rem;           /* Inner padding */
-  border-radius: 0;        /* No rounded corners */
-  box-shadow: none;        /* Remove shadow so it looks flush */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form form input,
 .contact-form form textarea {
   border: none;
   outline: none;
-  width: 100%;             /* Inputs also stretch full width */
-  padding: 14px;
+  width: 100%;
+  padding: 12px;
   background: rgba(244, 238, 238, 0.9);
   color: #068080;
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* On focus */
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  background: #fff;
+  border: 1px solid #068080;
+  box-shadow: 0 0 5px rgba(6, 128, 128, 0.4);
 }
 
 .contact-form textarea {
@@ -718,16 +726,21 @@ stroke-linecap: round;
 /* Submit button */
 .contact-form form button {
   width: 100%;
-  padding: 16px;
+  padding: 14px;
   border: none;
   border-radius: 0.5rem;
   background: #068080;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
+.contact-form form button:hover {
+  background: #056060;
+}
+
 
 .contact-form form button:hover {
   background: #056060;
@@ -874,6 +887,7 @@ stroke-linecap: round;
     padding: 10px;
     border-radius: 0.5rem;
 }
+
 
 
 
