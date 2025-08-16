@@ -673,26 +673,7 @@ stroke-linecap: round;
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
-.contact-form form{
-    position:relative;
-}
-.contact-form form input,form textarea{
-    border:none;
-    outline:indigo;
-    width: 90%;
-    padding: 12px;
-    background: rgba(244, 238, 238, 0.725);
-    color: #068080;
-    font-size: 1 rem;
-    font-weight: 6000;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
 
-}
-.contact-form textarea{
-    resize: none;
-    height: 220px;
-}
 /* Wrapper to make the form full screen */
 .contact-form {
   min-height: 100vh;       /* Full screen height */
@@ -700,9 +681,58 @@ stroke-linecap: round;
   display: flex;
   align-items: center;     /* Center vertically */
   justify-content: center; /* Center horizontally */
-  background: linear-gradient(135deg, #f0f4f8, #dfe9f3); /* Optional background */
-  padding: 20px;
+  background: linear-gradient(135deg, #f0f4f8, #dfe9f3);
+  padding: 0;              /* Remove padding */
+  margin: 0;
 }
+
+.contact-form form {
+  position: relative;
+  width: 100%;             /* Full width */
+  height: 100%;            /* Full height */
+  background: white;
+  padding: 3rem;           /* Inner padding */
+  border-radius: 0;        /* No rounded corners */
+  box-shadow: none;        /* Remove shadow so it looks flush */
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  border: none;
+  outline: none;
+  width: 100%;             /* Inputs also stretch full width */
+  padding: 14px;
+  background: rgba(244, 238, 238, 0.9);
+  color: #068080;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 220px;
+}
+
+/* Submit button */
+.contact-form form button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 0.5rem;
+  background: #068080;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form form button:hover {
+  background: #056060;
+}
+
 
 
 
@@ -844,6 +874,7 @@ stroke-linecap: round;
     padding: 10px;
     border-radius: 0.5rem;
 }
+
 
 
 
