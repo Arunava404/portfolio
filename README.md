@@ -1,2 +1,2 @@
 # portfolio
-my resume
+its my resume 
